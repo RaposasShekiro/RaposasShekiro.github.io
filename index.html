@@ -3,31 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shekiro Raposas, MIS | Contact</title>
+<title>Shekiro R. Raposas, MIS | Contact</title>
 <style>
-  :root { --bg:#f6f7f9; --card:#fff; --text:#1a1a1a; --muted:#666; --accent:#2457d6; }
+  :root { --bg:#e6f1ea; --card:#ffffff; --text:#12201a; --muted:#5f7468; --accent:#1e8a4c; --band:#0f3d26; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#121417; --card:#1c1f24; --text:#f0f0f0; --muted:#9aa0a6; --accent:#7aa2ff; }
+    :root { --bg:#0b120e; --card:#16201a; --text:#eef5f0; --muted:#95aa9c; --accent:#4ade80; --band:#07170e; }
   }
-  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg);
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px; background:var(--bg);
          color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
-  .card { background:var(--card); padding:32px; border-radius:16px; width:min(92vw,380px);
-          box-shadow:0 4px 24px rgba(0,0,0,.08); }
-  h1 { margin:0 0 4px; font-size:1.4rem; }
-  p.sub { margin:0 0 24px; color:var(--muted); }
-  a.row { display:block; padding:12px 0; border-top:1px solid rgba(128,128,128,.25);
+  .card { width:min(100%,400px); background:var(--card); border-radius:20px; overflow:hidden;
+          box-shadow:0 10px 40px rgba(0,0,0,.15); text-align:center; }
+  .band { height:110px; background:linear-gradient(135deg,var(--band),var(--accent)); }
+  .photo { width:128px; height:128px; margin:-64px auto 0; border-radius:50%; border:5px solid var(--card);
+           background:var(--accent); color:#fff; display:grid; place-items:center; font-size:2.4rem;
+           font-weight:700; overflow:hidden; position:relative; }
+  .photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .body { padding:18px 28px 28px; }
+  h1 { margin:8px 0 2px; font-size:1.3rem; letter-spacing:.02em; }
+  .roles { list-style:none; margin:0 0 22px; padding:0; color:var(--muted); font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; line-height:1.7; }
+  a.row { display:block; padding:14px 0; border-top:1px solid rgba(128,128,128,.25);
           color:var(--accent); text-decoration:none; word-break:break-all; }
-  a.row small { display:block; color:var(--muted); font-size:.75rem; }
-  a.btn { display:block; margin-top:20px; text-align:center; padding:12px; border-radius:10px;
-          background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+  a.row small { display:block; color:var(--muted); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; margin-bottom:2px; }
+  a.btn { display:block; margin-top:18px; padding:13px; border-radius:12px; background:var(--accent);
+          color:#fff; text-decoration:none; font-weight:600; }
 </style>
 </head>
 <body>
   <main class="card">
-    <h1>Shekiro Raposas, MIS</h1>
-    <p class="sub">Contact details</p>
-    <a class="row" href="mailto:shekiro.raposas16001@gmail.com"><small>Email</small>shekiro.raposas16001@gmail.com</a>
-    <a class="btn" href="contact.vcf" download>Save to contacts</a>
+    <div class="band"></div>
+    <div class="photo">SR<img src="photo.jpg" alt="Shekiro Raposas" onerror="this.remove()"></div>
+    <div class="body">
+      <h1>SHEKIRO R. RAPOSAS, MIS</h1>
+      <ul class="roles">
+        <li>Computer Engineer</li>
+        <li>Master in Information Systems</li>
+        <li>Scientific and Technological Specialist Eligibility</li>
+      </ul>
+      <a class="row" href="mailto:shekiro.raposas@lorma.edu"><small>School email</small>shekiro.raposas@lorma.edu</a>
+      <a class="row" href="mailto:shekiro.raposas16001@gmail.com"><small>Personal email</small>shekiro.raposas16001@gmail.com</a>
+      <a class="row" href="tel:+639922814030"><small>Phone</small>+63 992 281 4030</a>
+      <a class="btn" href="contact.vcf" download>Save to contacts</a>
+    </div>
   </main>
 </body>
 </html>
